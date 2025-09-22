@@ -24,7 +24,7 @@ test('Filter by price slider functionality', async ({ page }) => {
 test('Search by language functionality verification', async ({page}) => {
     const pm = new PageManager(page);
     await pm.navigateTo().navigateToFilterDialog();
-    await pm.onFilterDialog().searchForaLanguageAndCheckIt('հայերեն');
+    await pm.onFilterDialog().searchForaLanguageAndCheckIt('Հայերեն');
 
 })
 

@@ -14,12 +14,12 @@ export class Filter {
         await this.page.locator('#filter_language').getByRole('textbox').fill(enteredLanguage);
         expect(this.page.locator('#filter_language').getByRole('checkbox', {name: enteredLanguage, exact: true})).toBeVisible();
         if (await this.page.locator('#filter_language').getByRole('checkbox').count() === 1)
-        {
+         {
             await this.page.locator('#filter_language').getByRole('checkbox', {name: enteredLanguage}).check();
         }
         else {
             await this.page.locator('#filter_language').getByRole('checkbox').first().check();
-        }
+        } 
   }
     async setValueToPriceSliderAndVerifyIt(price: string) {
 
