@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { beforeEach } from 'node:test';
-import { PageManager } from '../page-objects/PageManager';
+import { PageManager } from '../page-objects/pageManager';
 
 test.beforeEach(async ({page}) => {
     await page.goto('https://zangakbookstore.am/');

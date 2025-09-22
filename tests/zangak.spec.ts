@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { PageManager } from '../page-objects/PageManager';
+import { PageManager } from '../page-objects/pageManager';
 
 test.describe('Zangak Bookstore test suite', () => {
 
